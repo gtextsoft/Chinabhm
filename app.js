@@ -1,10 +1,10 @@
 /**
- * BHMC landing — countdown, seats line, video fallback visibility, year.
+ * China Meet and Greet — countdown, seats line, video fallback visibility, year.
  * Set your registration deadline below (ISO string, local timezone interpreted by Date).
  */
 
 (function () {
-  const DEADLINE_ISO = "2026-05-15T23:59:59"; // Edit: registration close (adjust to your real date)
+  const DEADLINE_ISO = "2026-06-06T23:59:59"; // Registration closes before Shanghai (7 June)
 
   const seatsEl = document.querySelector("[data-seats]");
   const SEAT_MIN = 12;
