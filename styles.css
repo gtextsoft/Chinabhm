@@ -188,6 +188,15 @@ body {
   letter-spacing: -0.02em;
 }
 
+.hero__tagline {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .hero__title-accent {
   display: block;
   margin-top: 0.15em;
@@ -900,6 +909,28 @@ body {
   flex-direction: column;
   gap: 0.35rem;
   align-items: flex-start;
+}
+
+.footer__org {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer__contact {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer__contact a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.footer__contact a:hover {
+  color: var(--text);
 }
 
 .footer__brand {

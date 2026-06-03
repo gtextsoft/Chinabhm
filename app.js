@@ -4,7 +4,7 @@
  */
 
 (function () {
-  const DEADLINE_ISO = "2026-06-06T23:59:59"; // Registration closes before Shanghai (7 June)
+  const DEADLINE_ISO = "2026-06-26T23:59:59"; // Registration closes before Beijing (27 June)
 
   const seatsEl = document.querySelector("[data-seats]");
   const SEAT_MIN = 12;
