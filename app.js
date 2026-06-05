@@ -96,8 +96,24 @@
     if (y) y.textContent = String(new Date().getFullYear());
   }
 
+  function setFormRedirect() {
+    const form = document.querySelector(".registration-form");
+    if (!form) return;
+
+    let nextInput = form.querySelector('input[name="_next"]');
+    if (!nextInput) {
+      nextInput = document.createElement("input");
+      nextInput.type = "hidden";
+      nextInput.name = "_next";
+      form.appendChild(nextInput);
+    }
+
+    nextInput.value = new URL("/thankyou", window.location.href).href;
+  }
+
   tickCountdown();
   setSeatsLine();
   videoFallback();
   year();
+  setFormRedirect();
 })();

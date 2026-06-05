@@ -791,6 +791,58 @@ body {
   justify-content: center;
 }
 
+/* Thank you page */
+.thank-you {
+  min-height: calc(100vh - 12rem);
+  display: flex;
+  align-items: center;
+  padding: clamp(3rem, 8vw, 5rem) 0;
+}
+
+.thank-you .final {
+  margin-inline: auto;
+}
+
+.thank-you__icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.5rem;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.thank-you__steps {
+  text-align: left;
+  margin: 0 auto 2rem;
+  max-width: 480px;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.thank-you__steps h2 {
+  margin: 0 0 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.thank-you__steps ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.thank-you__steps li + li {
+  margin-top: 0.5rem;
+}
+
 .registration-form {
   margin: 0 auto 1.25rem;
   max-width: 760px;
@@ -854,6 +906,69 @@ body {
   margin-top: 1rem;
   width: 100%;
   min-height: 48px;
+}
+
+/* Community / WhatsApp */
+.community {
+  text-align: center;
+}
+
+.community--form {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.community__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.community__lead {
+  margin: 0 auto 1.25rem;
+  max-width: 36rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.community__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.community__link {
+  min-width: min(100%, 220px);
+}
+
+.footer__community {
+  margin-top: 0.75rem;
+}
+
+.footer__community-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.community__footer-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.community__footer-link:hover {
+  color: var(--gold);
+}
+
+.community__divider {
+  color: var(--muted);
 }
 
 /* FAQ */
